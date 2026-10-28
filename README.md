@@ -1,1 +1,1 @@
-# Curso-em-Video
+# Curso-em-vídeo

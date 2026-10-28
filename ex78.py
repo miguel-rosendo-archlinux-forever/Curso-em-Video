@@ -1,0 +1,16 @@
+listanum = []
+for n in range(0, 5):
+    listanum.append(int(input(f'Digite um valor para a {n+1}ª posição: ')))
+print('-=' * 40)
+print(f'Você digitou os valores {listanum}')
+maior_valor = max(listanum)
+menor_valor = min(listanum)
+posicoes_maior = []
+posicoes_menor = []
+for i, valor in enumerate(listanum):
+    if valor == maior_valor:
+        posicoes_maior.append(i + 1)
+    if valor == menor_valor:
+        posicoes_menor.append(i + 1)
+print(f'O maior valor digitado foi {maior_valor} nas posições: {posicoes_maior}')
+print(f'O menor valor digitado foi {menor_valor} nas posições: {posicoes_menor}')
